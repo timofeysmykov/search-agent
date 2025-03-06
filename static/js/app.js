@@ -77,14 +77,35 @@ document.addEventListener('DOMContentLoaded', function() {
         const messageDiv = document.createElement('div');
         messageDiv.className = isUser ? 'message user-message' : 'message agent-message';
         
+        // Создаем аватар
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'message-avatar';
+        
+        // Добавляем иконку в аватар
+        const iconSpan = document.createElement('span');
+        iconSpan.className = 'material-symbols-rounded';
+        iconSpan.textContent = isUser ? 'person' : 'smart_toy';
+        avatarDiv.appendChild(iconSpan);
+        
+        // Создаем контейнер для содержимого сообщения
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'message-content';
+        
+        // Добавляем текст сообщения
         if (!isUser) {
-            messageDiv.innerHTML = formatText(text);
+            contentDiv.innerHTML = formatText(text);
         } else {
-            messageDiv.textContent = text;
+            contentDiv.textContent = text;
         }
         
+        // Добавляем аватар и содержимое в сообщение
+        messageDiv.appendChild(avatarDiv);
+        messageDiv.appendChild(contentDiv);
+        
+        // Добавляем сообщение в контейнер чата
         chatContainer.appendChild(messageDiv);
         
+        // Прокручиваем к новому сообщению
         setTimeout(() => {
             messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
         }, 100);

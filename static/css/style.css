@@ -194,7 +194,7 @@ body {
 .message {
     display: flex;
     gap: 16px;
-    max-width: 100%;
+    max-width: 85%;
     animation: fadeIn 0.3s ease-out;
 }
 
@@ -225,18 +225,28 @@ body {
     background-color: var(--user-message-border);
 }
 
+.user-message {
+    margin-left: auto;
+    flex-direction: row-reverse;
+}
+
 .user-message .message-content {
-    background-color: var(--user-message-bg);
-    border-radius: 8px;
+    background-color: #1a1a7a;
+    border-color: #2a2a8a;
+    border-radius: 12px 12px 0 12px;
 }
 
 .agent-message .message-avatar {
     background-color: var(--agent-message-border);
 }
 
+.agent-message {
+    margin-right: auto;
+}
+
 .agent-message .message-content {
     background-color: var(--agent-message-bg);
-    border-radius: 8px;
+    border-radius: 12px 12px 12px 0;
 }
 
 .status {

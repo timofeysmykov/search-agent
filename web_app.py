@@ -37,14 +37,22 @@ def api_query():
         
         # Determine if search is needed
         search_performed = False
+        search_results = ""
+        
+        # Всегда выполняем поиск, так как needs_search всегда возвращает True
         if needs_search(processed_input):
+            logger.info(f"Выполняю поиск для запроса: {processed_input}")
             search_results = search_perplexity(processed_input)
             search_performed = bool(search_results)
             
-            # Combine input and search results
-            llm_input = combine_input(processed_input, search_results)
-        else:
-            llm_input = f"Запрос пользователя: {processed_input}\n\nПожалуйста, ответь на этот запрос, используя свои знания."
+            if search_results:
+                logger.info(f"Получены результаты поиска длиной {len(search_results)} символов")
+            else:
+                logger.warning(f"Поиск выполнен, но результаты не получены для запроса: {processed_input}")
+        
+        # Combine input and search results
+        llm_input = combine_input(processed_input, search_results)
+        logger.info(f"Подготовлен запрос к LLM длиной {len(llm_input)} символов")
         
         # Query the LLM
         response = query_llm(llm_input)
@@ -86,4 +94,4 @@ if __name__ == '__main__':
         print("Пожалуйста, установите их как переменные окружения или в файле .env")
     
     # Run the Flask app
-    app.run(debug=True, host='0.0.0.0', port=5006)
+    app.run(debug=True, host='0.0.0.0', port=5007)

@@ -45,6 +45,13 @@ def needs_search(processed_input):
         bool: True if search is needed, False otherwise
     """
     try:
+        # Всегда возвращаем True для включения поиска по умолчанию
+        # Это обеспечит, что Perplexity будет использоваться для всех запросов
+        logger.info(f"Активирую поиск для запроса: {processed_input}")
+        return True
+        
+        # Оставляем старый код закомментированным для возможного будущего использования
+        '''
         # Convert to lowercase for case-insensitive matching
         lower_input = processed_input.lower()
         
@@ -89,7 +96,11 @@ def needs_search(processed_input):
             "найди топ", "покажи топ", "рейтинг", "кто самый", "найди список",
             "актуальный список", "текущий рейтинг", "на сегодня", "на текущий момент"
         ]
+        '''
+
         
+        # Весь код закомментирован, так как теперь мы всегда возвращаем True выше
+        '''
         # Проверяем наличие сильных индикаторов
         for indicator in strong_indicators:
             if indicator in lower_input:
@@ -139,6 +150,7 @@ def needs_search(processed_input):
         
         logger.info(f"No search indicators found for input: {processed_input}")
         return False
+        '''
     except Exception as e:
         logger.error(f"Error determining if search is needed: {e}")
         # В случае ошибки лучше выполнить поиск
@@ -150,7 +162,7 @@ def combine_input(processed_input, search_results):
     
     Args:
         processed_input (str): Processed user input
-        search_results (list): Results from the search API
+        search_results (str): Results from the search API as text
         
     Returns:
         str: Combined input for the LLM
@@ -160,14 +172,8 @@ def combine_input(processed_input, search_results):
             logger.warning("No search results to combine")
             return f"Запрос пользователя: {processed_input}\n\nПожалуйста, ответь на этот запрос, используя свои знания."
         
-        # Подготовка информации из поиска
-        search_text = ""
-        sources_text = ""
-        has_sources = False
-        search_model = "неизвестно"
-        
-        # Проверяем наличие структурированных результатов
-        has_structured_results = any("structured" in result for result in search_results)
+        # Теперь search_results - это готовый текст из поиска
+        search_text = search_results
         
         # Анализируем запрос на предмет наличия временных маркеров будущего времени
         future_date_request = False
@@ -177,59 +183,14 @@ def combine_input(processed_input, search_results):
             future_date_request = True
             logger.info(f"Запрос содержит указание на будущую дату: {processed_input}")
         
-        if has_structured_results:
-            # Обрабатываем структурированные результаты
-            for result in search_results:
-                if "structured" in result:
-                    structured_data = result["structured"]
-                    search_model = structured_data.get('model', 'неизвестно')
-                    
-                    # Проверяем наличие источников
-                    if structured_data.get("has_sources", False) or "sources" in structured_data:
-                        has_sources = True
-                        if "sources" in structured_data:
-                            sources = structured_data["sources"]
-                            sources_text = "\nИсточники информации:\n"
-                            for i, source in enumerate(sources[:5]):
-                                sources_text += f"- {source}\n"
-                    
-                    # Добавляем разделы структурированного результата
-                    sections = structured_data.get("sections", [])
-                    
-                    # Проверяем наличие ответа с разделами
-                    if len(sections) >= 2:
-                        # Используем только первые 2 секции для краткого и подробного ответа
-                        search_text += f"КРАТКИЙ ОТВЕТ:\n{sections[0]}\n\n"
-                        search_text += f"ПОДРОБНАЯ ИНФОРМАЦИЯ:\n{sections[1]}\n\n"
-                        
-                        # Добавляем секцию с источниками, если есть третья секция и нет отдельных источников
-                        if len(sections) >= 3 and not has_sources:
-                            search_text += f"ИСТОЧНИКИ:\n{sections[2]}\n\n"
-                    else:
-                        # Если нет структурированных разделов, добавляем весь контент
-                        full_content = structured_data.get("full_content", "")
-                        if full_content:
-                            search_text += f"{full_content}\n\n"
-                        else:
-                            # Если и этого нет, добавляем все имеющиеся секции
-                            for section in sections:
-                                search_text += f"{section}\n\n"
-        else:
-            # Обрабатываем обычные сниппеты
-            for i, result in enumerate(search_results[:2]):  # Ограничиваем до 2 результатов
-                if "snippet" in result:
-                    search_text += f"Результат поиска {i+1}:\n{result['snippet']}\n\n"
-                elif "text" in result:
-                    search_text += f"Результат поиска {i+1}:\n{result['text']}\n\n"
-        
-        # Добавляем информацию об источниках, если она есть
-        if has_sources and sources_text:
-            search_text += sources_text
+        # Проверяем наличие источников в тексте
+        has_sources = "источник" in search_text.lower() or "источники" in search_text.lower()
+        search_model = "sonar"  # Предполагаем, что мы используем модель sonar
         
         # Указываем модель поиска и дату
         from datetime import datetime
         current_date = datetime.now().strftime("%d.%m.%Y")
-        search_info = f"[Информация получена с помощью поисковой модели {search_model} по состоянию на {current_date}]"
+        search_info = f"[Информация получена с помощью поисковой модели sonar по состоянию на {current_date}]"
         
         # Определяем ключевые индикаторы запроса для более точных инструкций LLM
         contains_ranking = any(word in processed_input.lower() for word in ["топ", "рейтинг", "список", "самый", "лучший"])
