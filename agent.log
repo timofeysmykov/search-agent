@@ -1,0 +1,494 @@
+2025-03-06 12:37:09,292 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.2:5001
+2025-03-06 12:37:09,292 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 12:37:09,330 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:37:09,487 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:37:09,493 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:41:10,048 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:41:10,995 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:41:11,252 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:41:11,260 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:41:44,073 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:41:44,557 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:41:44,837 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:41:44,843 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:42:05,231 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:42:06,058 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:42:06,272 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:42:06,282 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:42:13,078 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 12:42:13,078 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 12:42:13,085 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:42:13,236 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:42:13,241 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:42:37,323 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 12:42:37] "GET / HTTP/1.1" 200 -
+2025-03-06 12:42:39,407 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 12:42:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 12:58:11,286 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:58:11,288 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:58:11,616 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:58:11,923 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:58:12,510 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:58:12,510 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:58:12,529 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:58:12,531 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:58:31,211 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:58:31,213 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:58:31,716 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:58:31,747 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:58:31,905 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:58:31,913 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:58:31,924 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:58:31,930 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:59:00,462 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 12:59:00,463 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 12:59:00,468 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:59:00,649 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:59:00,656 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:59:06,333 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:59:06,745 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:59:06,888 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:59:06,892 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:59:26,928 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 12:59:26,928 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 12:59:26,933 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:59:27,082 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:59:27,088 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 12:59:32,314 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 12:59:33,202 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 12:59:33,382 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 12:59:33,390 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:05:23,931 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:05:23] "GET / HTTP/1.1" 200 -
+2025-03-06 13:06:40,867 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 13:06:40,867 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:06:40,873 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:06:41,058 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:06:41,063 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:06:41,740 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:06:42,131 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:06:42,377 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:06:42,382 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:07:05,287 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:07:05] "GET / HTTP/1.1" 200 -
+2025-03-06 13:07:08,719 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/__init__.py', reloading
+2025-03-06 13:07:08,719 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/__init__.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/core.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/core.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/decorator.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/decorator.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/extension.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/extension.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/version.py', reloading
+2025-03-06 13:07:08,720 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/Library/Python/3.9/lib/python/site-packages/flask_cors/version.py', reloading
+2025-03-06 13:07:09,620 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:07:09,778 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:07:09,783 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:07:10,789 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 13:07:10,790 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:07:10,793 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:07:10,949 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:07:10,953 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:07:12,409 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:07:12,995 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:07:13,192 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:07:13,196 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:07:36,156 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:07:36,382 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:07:36,651 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:07:36,657 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:07:40,453 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:07:41,112 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 13:07:41,112 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:07:41,118 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:07:41,309 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:07:41,320 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:08:05,836 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:08:06,550 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:08:06,828 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:08:06,836 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:08:10,163 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 13:08:10,164 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:08:10,182 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:08:10,367 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:08:10,371 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:08:11,469 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:08:12,421 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:08:12,637 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:08:12,642 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:08:31,260 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 13:08:31,260 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:08:31,266 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:08:31,423 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:08:31,429 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:08:37,521 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:08:38,509 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:08:38,684 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:08:38,689 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:08:50,145 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:08:50] "GET / HTTP/1.1" 200 -
+2025-03-06 13:12:04,883 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.0.2:5002
+2025-03-06 13:12:04,883 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:12:04,890 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:12:05,035 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:12:05,040 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:12:31,702 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:12:31] "GET / HTTP/1.1" 200 -
+2025-03-06 13:13:27,907 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:13:28,046 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:13:28,353 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:13:28,362 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:13:36,773 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.2:5001
+2025-03-06 13:13:36,773 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:13:36,781 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:13:36,980 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:13:36,988 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:14:11,565 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:14:11] "GET / HTTP/1.1" 200 -
+2025-03-06 13:16:07,996 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:16:08,295 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:16:08,661 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:16:08,667 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:16:22,535 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.2:5001
+2025-03-06 13:16:22,535 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:16:22,541 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:16:22,705 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:16:22,712 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:16:51,996 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:16:51] "GET /?vscodeBrowserReqId=1741256211983 HTTP/1.1" 200 -
+2025-03-06 13:17:16,135 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:17:16] "GET /?vscodeBrowserReqId=1741256236122 HTTP/1.1" 200 -
+2025-03-06 13:20:29,301 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:20:29,851 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:20:30,123 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:20:30,132 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:21:23,296 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:21:23,600 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:21:23,833 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:21:23,838 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:21:35,031 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://10.0.0.2:5003
+2025-03-06 13:21:35,031 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:21:35,037 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:21:35,184 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:21:35,189 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:22:12,431 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:22:12] "GET /?vscodeBrowserReqId=1741256532402 HTTP/1.1" 200 -
+2025-03-06 13:24:45,607 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:24:45] "GET /?vscodeBrowserReqId=1741256685586 HTTP/1.1" 200 -
+2025-03-06 13:25:01,128 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:25:01,128 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:25:01,759 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:25:02,032 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:25:02,035 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:25:02,042 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:25:02,193 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:25:02,197 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:26:43,341 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:26:43,341 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 13:26:43,960 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:26:44,114 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:26:44,226 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:26:44,233 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:26:44,266 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:26:44,274 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:26:55,156 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://10.0.0.2:5005
+2025-03-06 13:26:55,157 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 13:26:55,162 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 13:26:55,296 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 13:26:55,304 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 13:33:22,755 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 13:33:22] "GET / HTTP/1.1" 200 -
+2025-03-06 15:33:45,311 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 15:33:45] "GET / HTTP/1.1" 200 -
+2025-03-06 15:55:49,339 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 15:55:49,339 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 15:55:49,668 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 15:55:49,689 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 15:55:50,036 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 15:55:50,036 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 15:55:50,046 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 15:55:50,046 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:02:50,079 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://10.0.0.2:5003
+2025-03-06 16:02:50,079 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 16:02:50,088 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:02:50,256 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:02:50,264 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:04:03,765 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 16:04:04,027 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:04:04,251 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:04:04,258 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:04:10,558 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.0.0.2:5004
+2025-03-06 16:04:10,558 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 16:04:10,564 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:04:10,726 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:04:10,734 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:06:27,363 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:06:27] "GET /?vscodeBrowserReqId=1741266387338 HTTP/1.1" 200 -
+2025-03-06 16:06:34,473 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:06:34] "GET /?vscodeBrowserReqId=1741266394465 HTTP/1.1" 200 -
+2025-03-06 16:17:33,526 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:33] "GET /?vscodeBrowserReqId=1741267053468 HTTP/1.1" 200 -
+2025-03-06 16:17:33,585 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-06 16:17:33,585 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:33] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-03-06 16:17:34,280 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:34] "GET /?vscodeBrowserReqId=1741267054237 HTTP/1.1" 200 -
+2025-03-06 16:17:34,300 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-06 16:17:34,304 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:34] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-03-06 16:17:47,438 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:47] "GET /?vscodeBrowserReqId=1741267067433 HTTP/1.1" 200 -
+2025-03-06 16:17:47,447 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-06 16:17:47,447 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-03-06 16:17:50,862 - utils - INFO - Processed input: привет
+2025-03-06 16:17:50,862 - utils - INFO - Search needed: False for input: привет
+2025-03-06 16:17:50,862 - llm_api - INFO - Sending request to Claude API with input length: 86
+2025-03-06 16:17:51,678 - llm_api - INFO - Received response from Claude API with length: 59
+2025-03-06 16:17:51,679 - utils - INFO - Response formatted successfully
+2025-03-06 16:17:51,680 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:17:51] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 16:18:49,359 - utils - INFO - Processed input: найди подробную информацию про макбук air m4, который недавно вышел
+2025-03-06 16:18:49,360 - utils - INFO - Search needed: False for input: найди подробную информацию про макбук air m4, который недавно вышел
+2025-03-06 16:18:49,360 - llm_api - INFO - Sending request to Claude API with input length: 147
+2025-03-06 16:18:53,450 - llm_api - INFO - Received response from Claude API with length: 1269
+2025-03-06 16:18:53,453 - utils - INFO - Response formatted successfully
+2025-03-06 16:18:53,454 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:18:53] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 16:19:33,934 - utils - INFO - Processed input: воспрользуйся поиском perplexity для получения последних данных
+2025-03-06 16:19:33,935 - utils - INFO - Search needed: False for input: воспрользуйся поиском perplexity для получения последних данных
+2025-03-06 16:19:33,935 - llm_api - INFO - Sending request to Claude API with input length: 143
+2025-03-06 16:19:37,235 - llm_api - INFO - Received response from Claude API with length: 1165
+2025-03-06 16:19:37,237 - utils - INFO - Response formatted successfully
+2025-03-06 16:19:37,237 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:19:37] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 16:21:54,108 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 16:21:54,110 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 16:21:54,520 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:21:54,691 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:21:54,811 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:21:54,821 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:21:54,873 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:21:54,878 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:22:36,547 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/search_api.py', reloading
+2025-03-06 16:22:36,547 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/search_api.py', reloading
+2025-03-06 16:22:36,939 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:22:36,963 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:22:37,578 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:22:37,600 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:22:37,602 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:22:37,615 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:22:55,816 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:22:55] "GET /?vscodeBrowserReqId=1741267375798 HTTP/1.1" 200 -
+2025-03-06 16:23:10,021 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 16:23:10,034 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 16:23:10,927 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:23:10,978 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:23:11,172 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:23:11,172 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:23:11,183 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:23:11,183 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:23:46,930 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 16:23:46,931 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 16:23:47,469 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:23:47,469 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:23:47,699 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:23:47,699 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:23:47,706 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:23:47,706 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:23:57,164 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://10.0.0.2:5005
+2025-03-06 16:23:57,164 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 16:23:57,176 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 16:23:57,358 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 16:23:57,363 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 16:24:17,280 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:24:17] "GET /?vscodeBrowserReqId=1741267457264 HTTP/1.1" 200 -
+2025-03-06 17:23:17,364 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:23:17] "GET /?vscodeBrowserReqId=1741270997353 HTTP/1.1" 200 -
+2025-03-06 17:26:43,155 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 17:26:43,156 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 17:26:43,155 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 17:26:43,649 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:26:43,836 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:26:43,867 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:35:11,855 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://10.0.0.2:5005
+2025-03-06 17:35:11,855 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 17:35:11,862 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:35:12,011 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:35:12,018 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 17:35:33,937 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:35:33] "GET /?vscodeBrowserReqId=1741271733927 HTTP/1.1" 200 -
+2025-03-06 17:42:56,574 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.2:5001
+2025-03-06 17:42:56,574 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 17:42:56,581 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:42:56,781 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:42:56,788 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 17:44:09,520 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:44:09] "GET /?vscodeBrowserReqId=1741272249486 HTTP/1.1" 200 -
+2025-03-06 17:48:14,019 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/main.py', reloading
+2025-03-06 17:48:14,453 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:48:14,709 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:48:14,714 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 17:55:45,485 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:55:45] "GET /?vscodeBrowserReqId=1741272945435 HTTP/1.1" 200 -
+2025-03-06 17:55:45,558 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:55:45] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-03-06 17:55:45,559 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:55:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-06 17:55:55,481 - utils - INFO - Processed input: привет, ты работаешь?
+2025-03-06 17:55:55,481 - utils - INFO - No search indicators found for input: привет, ты работаешь?
+2025-03-06 17:55:55,481 - llm_api - INFO - Sending request to Claude API with input length: 101
+2025-03-06 17:55:56,351 - llm_api - INFO - Received response from Claude API with length: 78
+2025-03-06 17:55:56,354 - utils - INFO - Response formatted successfully
+2025-03-06 17:55:56,354 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:55:56] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 17:56:40,152 - utils - INFO - Processed input: найди мне 10 самых дорогих компаний в мире на март 2025 года. используй инструмент perplexity для поиска
+2025-03-06 17:56:40,153 - utils - INFO - Search keyword found: '2025' in input: найди мне 10 самых дорогих компаний в мире на март 2025 года. используй инструмент perplexity для поиска
+2025-03-06 17:56:40,153 - search_api - INFO - Отправка запроса в Perplexity API: найди мне 10 самых дорогих компаний в мире на март 2025 года. используй инструмент perplexity для поиска
+2025-03-06 17:56:40,607 - search_api - ERROR - Ошибка запроса API: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 17:56:40,607 - search_api - INFO - Использование резервного метода поиска для: найди мне 10 самых дорогих компаний в мире на март 2025 года. используй инструмент perplexity для поиска
+2025-03-06 17:56:40,987 - search_api - ERROR - Ошибка в резервном методе поиска: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 17:56:40,990 - utils - WARNING - No search results to combine
+2025-03-06 17:56:40,990 - llm_api - INFO - Sending request to Claude API with input length: 184
+2025-03-06 17:56:44,540 - llm_api - INFO - Received response from Claude API with length: 1046
+2025-03-06 17:56:44,541 - utils - INFO - Response formatted successfully
+2025-03-06 17:56:44,541 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:56:44] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 17:57:26,855 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:57:26] "GET / HTTP/1.1" 200 -
+2025-03-06 17:57:26,894 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:57:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-06 17:57:26,896 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:57:26] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-03-06 17:57:28,160 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:57:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 17:58:03,249 - utils - INFO - Processed input: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 17:58:03,249 - utils - INFO - Search keyword found: '2025' in input: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 17:58:03,250 - search_api - INFO - Отправка запроса в Perplexity API: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 17:58:03,878 - search_api - ERROR - Ошибка запроса API: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 17:58:03,879 - search_api - INFO - Использование резервного метода поиска для: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 17:58:04,258 - search_api - ERROR - Ошибка в резервном методе поиска: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 17:58:04,265 - utils - WARNING - No search results to combine
+2025-03-06 17:58:04,265 - llm_api - INFO - Sending request to Claude API with input length: 140
+2025-03-06 17:58:09,694 - llm_api - INFO - Received response from Claude API with length: 1835
+2025-03-06 17:58:09,698 - utils - INFO - Response formatted successfully
+2025-03-06 17:58:09,699 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:58:09] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 17:59:45,736 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:59:45] "GET / HTTP/1.1" 200 -
+2025-03-06 17:59:45,773 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:59:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-06 17:59:45,773 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:59:45] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-03-06 17:59:47,258 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:59:47] "GET / HTTP/1.1" 200 -
+2025-03-06 17:59:47,269 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:59:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-06 17:59:47,269 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 17:59:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-03-06 18:00:32,343 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 18:00:32,880 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:00:33,196 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:00:33,240 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:01:08,434 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/web_app.py', reloading
+2025-03-06 18:01:08,536 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:01:08,755 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:01:08,762 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:01:15,923 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://10.0.0.2:5006
+2025-03-06 18:01:15,923 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 18:01:15,928 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:01:16,065 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:01:16,070 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:02:10,408 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:10] "GET / HTTP/1.1" 200 -
+2025-03-06 18:02:10,423 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-03-06 18:02:10,423 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-06 18:02:10,455 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:10] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-03-06 18:02:10,457 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:10] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-03-06 18:02:19,837 - utils - INFO - Processed input: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 18:02:19,837 - utils - INFO - Found ranking + entity combination: 'топ' + 'компаний' in: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 18:02:19,837 - search_api - INFO - Отправка запроса в Perplexity API: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 18:02:20,504 - search_api - ERROR - Ошибка запроса API: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 18:02:20,505 - search_api - INFO - Использование резервного метода поиска для: найди мне топ 10 самых дорогих компаний на февраль 2025 года
+2025-03-06 18:02:20,926 - search_api - ERROR - Ошибка в резервном методе поиска: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 18:02:20,932 - utils - WARNING - No search results to combine
+2025-03-06 18:02:20,932 - llm_api - INFO - Sending request to Claude API with input length: 140
+2025-03-06 18:02:27,148 - llm_api - INFO - Received response from Claude API with length: 2405
+2025-03-06 18:02:27,153 - utils - INFO - Response formatted successfully
+2025-03-06 18:02:27,154 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:27] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 18:02:36,156 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:36] "GET /?vscodeBrowserReqId=1741273356143 HTTP/1.1" 200 -
+2025-03-06 18:02:36,178 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-06 18:02:36,178 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:02:36] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-03-06 18:02:57,533 - utils - INFO - Processed input: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:02:57,533 - utils - INFO - Found ranking + entity combination: 'топ' + 'компаний' in: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:02:57,533 - search_api - INFO - Отправка запроса в Perplexity API: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:02:58,209 - search_api - ERROR - Ошибка запроса API: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 18:02:58,209 - search_api - INFO - Использование резервного метода поиска для: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:02:58,828 - search_api - ERROR - Ошибка в резервном методе поиска: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 18:02:58,830 - utils - WARNING - No search results to combine
+2025-03-06 18:02:58,830 - llm_api - INFO - Sending request to Claude API with input length: 124
+2025-03-06 18:03:03,543 - llm_api - INFO - Received response from Claude API with length: 1438
+2025-03-06 18:03:03,545 - utils - INFO - Response formatted successfully
+2025-03-06 18:03:03,546 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:03:03] "POST /api/query HTTP/1.1" 200 -
+2025-03-06 18:05:24,083 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/search_api.py', reloading
+2025-03-06 18:05:24,084 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/search_api.py', reloading
+2025-03-06 18:05:24,442 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:05:24,684 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:05:24,690 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:05:25,004 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:05:25,153 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:05:25,157 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:05:56,797 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/search_api.py', reloading
+2025-03-06 18:05:56,797 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/search_api.py', reloading
+2025-03-06 18:05:57,014 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:05:57,267 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:05:57,273 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:05:57,387 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:05:57,519 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:05:57,522 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:07:13,309 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 18:07:13,312 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 18:07:13,826 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:07:14,084 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:07:14,106 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:07:14,113 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:07:14,250 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:07:14,255 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:07:24,117 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 18:07:24,117 - werkzeug - INFO -  * Detected change in '/Users/timsmykov/CascadeProjects/ai_agent/utils.py', reloading
+2025-03-06 18:07:24,292 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:07:24,359 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 18:07:24,555 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:07:24,561 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:07:24,572 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 18:07:24,576 - werkzeug - INFO -  * Debugger PIN: 805-385-118
+2025-03-06 18:11:26,758 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:11:26] "GET /?vscodeBrowserReqId=1741273886739 HTTP/1.1" 200 -
+2025-03-06 18:11:26,793 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:11:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-03-06 18:11:26,794 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:11:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-06 18:11:46,656 - utils - INFO - Processed input: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:11:46,656 - utils - INFO - Found ranking + entity combination: 'топ' + 'компаний' in: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:11:46,657 - search_api - INFO - Подготовлен запрос к Perplexity: Найди самую актуальную фактическую информацию по запросу: 'топ самых дорогих компаний на март 2025 года'. Сосредоточься на следующих аспектах: бизнес, рыночная капитализация, финансы, рейтинг, список, рыночная капитализация, стоимость, цена, капитализация, оценка. ОЧЕНЬ ВАЖНО: предоставь ТОЛЬКО ФАКТИЧЕСКИЕ ДАННЫЕ из надежных источников, без предположений и прогнозов на будущие периоды. Если запрос касается будущей даты, укажи самые свежие имеющиеся данные и четко отметь, за какой период они актуальны.
+2025-03-06 18:11:46,657 - search_api - INFO - Отправка запроса в Perplexity API: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:11:46,657 - search_api - INFO - Отправляется запрос в Perplexity API: {"model": "pplx-7b-online", "messages": [{"role": "system", "content": "Ты - поисковый ассистент, который ищет только фактическую и актуальную информацию в интернете. Предоставляй только достоверную и актуальную информацию без предположений и прогнозов. Если информация запрашивается на будущую дату, ищи самые свежие данные и тренды. Всегда указывай источники и даты их публикации. ВАЖНО: При запросах о рейтингах, списках и 'топах' компаний, продуктов или людей, обязательно используй последние дос...
+2025-03-06 18:11:47,117 - search_api - ERROR - Ошибка запроса API: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 18:11:47,117 - search_api - INFO - Использование резервного метода поиска для: топ самых дорогих компаний на март 2025 года
+2025-03-06 18:11:47,480 - search_api - ERROR - Ошибка в резервном методе поиска: 400 Client Error: Bad Request for url: https://api.perplexity.ai/chat/completions
+2025-03-06 18:11:47,482 - utils - WARNING - No search results to combine
+2025-03-06 18:11:47,482 - llm_api - INFO - Sending request to Claude API with input length: 124
+2025-03-06 18:11:50,659 - llm_api - INFO - Received response from Claude API with length: 1063
+2025-03-06 18:11:50,662 - utils - INFO - Response formatted successfully
+2025-03-06 18:11:50,662 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 18:11:50] "POST /api/query HTTP/1.1" 200 -

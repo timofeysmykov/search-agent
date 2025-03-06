@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-rounded">smart_toy</span>
+                </div>
+                <span>AI Agent</span>
+            </div>
+            <div class="header-controls">
+                <button id="clear-chat" class="icon-button" title="Очистить чат">
+                    <span class="material-symbols-rounded">delete_sweep</span>
+                </button>
+                <button id="theme-toggle" class="icon-button" title="Переключить тему">
+                    <span class="material-symbols-rounded">dark_mode</span>
+                </button>
+            </div>
+        </header>
+        
+        <div class="sidebar-and-chat">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h3>История чатов</h3>
+                    <button id="new-chat" class="new-chat-button">
+                        <span class="material-symbols-rounded">add</span>
+                        Новый чат
+                    </button>
+                </div>
+                <div class="chat-history" id="chat-history">
+                    <!-- История чатов будет здесь -->
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div id="chat-container" class="chat-container">
+                    <!-- Приветственное сообщение -->
+                    <div class="message agent-message">
+                        <div class="message-avatar">
+                            <span class="material-symbols-rounded">smart_toy</span>
+                        </div>
+                        <div class="message-content">
+                            <p>Привет! Я AI Agent, использующий Claude 3.5 Haiku и Perplexity. Чем могу помочь?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="status" class="status" style="display: none;"></div>
+                
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <textarea id="user-input" placeholder="Введите ваш запрос..."></textarea>
+                        <button id="send-button">
+                            <span class="material-symbols-rounded">send</span>
+                        </button>
+                    </div>
+                    <div class="input-footer">
+                        <span class="input-info">Claude 3.5 Haiku + Perplexity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+        function formatText(text) {
+            text = text.replace(/
+/g, '<br>');
+            text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            text = text.replace(/__(.*?)__/g, '<strong>$1</strong>');
+            text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            text = text.replace(/_(.*?)_/g, '<em>$1</em>');
+            text = text.replace(/`(.*?)`/g, '<code>$1</code>');
+            return text;
+        }
+        
+        // Добавление сообщения в чат
+        function addMessage(text, isUser) {
+            if (!chatContainer) chatContainer = document.getElementById('chat-container');
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.className = isUser ? 'message user-message' : 'message agent-message';
+            
+            if (!isUser) {
+                messageDiv.innerHTML = formatText(text);
+            } else {
+                messageDiv.textContent = text;
+            }
+            
+            chatContainer.appendChild(messageDiv);
+            
+            setTimeout(() => {
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }, 100);
+        }
+        
+        // Индикаторы статуса
+        function showLoading() {
+            if (!statusDiv) statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Обрабатываю ваш запрос...</p>
+                </div>
+            `;
+        }
+        
+        function clearStatus() {
+            if (!statusDiv) statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = '';
+        }
+        
+        function showError(message) {
+            if (!statusDiv) statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = `
+                <div class="error">
+                    <span class="material-symbols-rounded">error</span>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+        
+        function addSearchIndicator() {
+            if (!chatContainer) chatContainer = document.getElementById('chat-container');
+            
+            const searchIndicator = document.createElement('div');
+            searchIndicator.className = 'search-indicator';
+            searchIndicator.innerHTML = `
+                <span class="material-symbols-rounded" style="font-size: 14px;">search</span>
+                <span>Для ответа использовалась информация из поиска</span>
+            `;
+            chatContainer.appendChild(searchIndicator);
+        }
+        
+        // Основная функция отправки запроса - глобальная для доступа из HTML
+        window.sendQuery = async function() {
+            alert('Функция sendQuery вызвана!');
+            console.log('sendQuery вызван!', userInput, chatContainer);
+            
+            // Берем элемент напрямую на случай, если глобальная переменная не доступна
+            const input = userInput || document.getElementById('user-input');
+            if (!input) {
+                alert('Ошибка: поле ввода не найдено!');
+                console.error('Элемент ввода не найден!');
+                return;
+            }
+            
+            const query = input.value.trim();
+            if (!query) {
+                alert('Введите текст запроса');
+                return;
+            }
+            
+            alert('Отправляем запрос: ' + query);
+            
+            addMessage(query, true);
+            input.value = '';
+            showLoading();
+            
+            try {
+                console.log('Отправка запроса к API...');
+                const response = await fetch('/api/query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ query })
+                });
+                
+                console.log('Ответ получен:', response);
+                const data = await response.json();
+                
+                if (data.error) {
+                    showError(`Ошибка: ${data.error}`);
+                    return;
+                }
+                
+                addMessage(data.response, false);
+                
+                if (data.search_performed) {
+                    addSearchIndicator();
+                }
+                
+                clearStatus();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Ошибка: ' + error.message);
+                showError(`Произошла ошибка при обработке запроса: ${error.message}`);
+            }
+        };
+    </script>
+</body>
+</html>
+    

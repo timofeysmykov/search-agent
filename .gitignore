@@ -1,0 +1,40 @@
+# Игнорируем файлы с конфиденциальными данными
+.env
+.env.*
+
+# Игнорируем кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Игнорируем виртуальное окружение
+venv/
+ENV/
+env/
+
+# Игнорируем файлы IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Игнорируем системные файлы
+.DS_Store
+Thumbs.db
