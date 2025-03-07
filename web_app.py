@@ -132,7 +132,7 @@ def api_query():
         logger.info(f"Подготовлен запрос к LLM длиной {len(llm_input)} символов")
         
         # Query the LLM
-        response = query_llm(llm_input, test_mode=test_mode)
+        response = query_llm(llm_input, detect_search_needs=False, test_mode=test_mode)
         
         # Format the response
         formatted_response = format_output(response)
