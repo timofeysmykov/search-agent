@@ -131,8 +131,14 @@ def api_query():
         llm_input = combine_input(processed_input, search_results)
         logger.info(f"Подготовлен запрос к LLM длиной {len(llm_input)} символов")
         
-        # Query the LLM
-        response = query_llm(llm_input, detect_search_needs=False, test_mode=test_mode)
+        # Query the LLM - не используем параметр test_mode для совместимости с серверной версией
+        # Если нужен тестовый режим, обрабатываем его отдельно
+        if test_mode:
+            # Генерируем тестовый ответ без прямого использования test_mode в query_llm
+            from llm_api import generate_test_response
+            response = generate_test_response(processed_input)
+        else:
+            response = query_llm(llm_input, detect_search_needs=False)
         
         # Format the response
         formatted_response = format_output(response)
