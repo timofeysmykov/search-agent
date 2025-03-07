@@ -131,15 +131,9 @@
         // Проверка статуса тестового режима на сервере
         async function checkTestModeStatus() {
             try {
-                const response = await fetch('/api/query', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ 
-                        query: 'status',
-                        test_mode: false
-                    })
+                // Просто проверяем наличие API ключей, без отправки запроса с содержимым
+                const response = await fetch('/api/test_mode_status', {
+                    method: 'GET'
                 });
                 
                 const data = await response.json();
@@ -163,6 +157,8 @@
                 }
             } catch (error) {
                 console.error('Ошибка при получении статуса тестового режима:', error);
+                // Если произошла ошибка, предполагаем что мы в обычном режиме
+                testModeCheckbox.checked = false;
             }
         }
         
@@ -603,153 +599,9 @@
                 }
             }
         });
-    </script>
-</body>
-</html>
-        function formatText(text) {
-            text = text.replace(/
-/g, '<br>');
-            text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-            text = text.replace(/__(.*?)__/g, '<strong>$1</strong>');
-            text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
-            text = text.replace(/_(.*?)_/g, '<em>$1</em>');
-            text = text.replace(/`(.*?)`/g, '<code>$1</code>');
-            return text;
-        }
         
-        // Добавление сообщения в чат
-        function addMessage(text, isUser) {
-            if (!chatContainer) chatContainer = document.getElementById('chat-container');
-            
-            const messageDiv = document.createElement('div');
-            messageDiv.className = isUser ? 'message user-message' : 'message agent-message';
-            
-            if (!isUser) {
-                messageDiv.innerHTML = formatText(text);
-            } else {
-                messageDiv.textContent = text;
-            }
-            
-            chatContainer.appendChild(messageDiv);
-            
-            setTimeout(() => {
-                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
-            }, 100);
-        }
-        
-        // Индикаторы статуса
-        function showLoading() {
-            if (!statusDiv) statusDiv = document.getElementById('status');
-            statusDiv.innerHTML = `
-                <div class="loading">
-                    <div class="spinner"></div>
-                    <p>Обрабатываю ваш запрос...</p>
-                </div>
-            `;
-        }
-        
-        function clearStatus() {
-            if (!statusDiv) statusDiv = document.getElementById('status');
-            statusDiv.innerHTML = '';
-        }
-        
-        function showError(message) {
-            if (!statusDiv) statusDiv = document.getElementById('status');
-            statusDiv.innerHTML = `
-                <div class="error">
-                    <span class="material-symbols-rounded">error</span>
-                    <p>${message}</p>
-                </div>
-            `;
-        }
-        
-        function addSearchIndicator() {
-            if (!chatContainer) chatContainer = document.getElementById('chat-container');
-            
-            const searchIndicator = document.createElement('div');
-            searchIndicator.className = 'search-indicator';
-            searchIndicator.innerHTML = `
-                <span class="material-symbols-rounded" style="font-size: 14px;">search</span>
-                <span>Для ответа использовалась информация из поиска</span>
-            `;
-            chatContainer.appendChild(searchIndicator);
-        }
-        
-        // Основная функция отправки запроса - глобальная для доступа из HTML
-        window.sendQuery = async function() {
-            alert('Функция sendQuery вызвана!');
-            console.log('sendQuery вызван!', userInput, chatContainer);
-            
-            // Берем элемент напрямую на случай, если глобальная переменная не доступна
-            const input = userInput || document.getElementById('user-input');
-            if (!input) {
-                alert('Ошибка: поле ввода не найдено!');
-                console.error('Элемент ввода не найден!');
-                return;
-            }
-            
-            const query = input.value.trim();
-            if (!query) {
-                alert('Введите текст запроса');
-                return;
-            }
-            
-            alert('Отправляем запрос: ' + query);
-            
-            addMessage(query, true);
-            input.value = '';
-            showLoading();
-            
-            try {
-                console.log('Отправка запроса к API...');
-                // Получаем состояние переключателя тестового режима
-                const testModeCheckbox = document.getElementById('test-mode-checkbox');
-                const testMode = testModeCheckbox ? testModeCheckbox.checked : false;
-                
-                const response = await fetch('/api/query', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ 
-                        query,
-                        test_mode: testMode  // Передаем параметр тестового режима
-                    })
-                });
-                
-                console.log('Ответ получен:', response);
-                const data = await response.json();
-                
-                if (data.error) {
-                    showError(`Ошибка: ${data.error}`);
-                    return;
-                }
-                
-                addMessage(data.response, false);
-                
-                if (data.search_performed) {
-                    addSearchIndicator();
-                }
-                
-                // Если ответ получен в тестовом режиме, показываем индикатор
-                if (data.test_mode) {
-                    const testModeIndicator = document.createElement('div');
-                    testModeIndicator.className = 'test-mode-indicator';
-                    testModeIndicator.innerHTML = `
-                        <span class="material-symbols-rounded" style="font-size: 14px;">science</span>
-                        <span>Ответ сгенерирован в тестовом режиме без использования API</span>
-                    `;
-                    chatContainer.appendChild(testModeIndicator);
-                }
-                
-                clearStatus();
-                
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Ошибка: ' + error.message);
-                showError(`Произошла ошибка при обработке запроса: ${error.message}`);
-            }
-        };
+        // Делаем функцию sendQuery глобальной для доступа из HTML
+        window.sendQuery = sendQuery;
     </script>
 </body>
 </html>

@@ -202,6 +202,26 @@ CREATE TABLE IF NOT EXISTS chats (
             print(f"Ошибка при создании директории для базы данных: {e}")
             print("Проверьте права доступа или установите переменную окружения DB_PATH")
 
+# Статус тестового режима без создания нового чата
+@app.route('/api/test_mode_status', methods=['GET'])
+def test_mode_status():
+    """Получить текущий статус тестового режима без создания чата"""
+    global TEST_MODE
+    
+    # Также проверяем наличие API ключей для метки принудительного тестового режима
+    claude_api_key = os.getenv('CLAUDE_API_KEY')
+    perplexity_api_key = os.getenv('PERPLEXITY_API_KEY')
+    forced_test_mode = not (claude_api_key and perplexity_api_key)
+    
+    # Если отсутствуют API ключи, принудительно включаем тестовый режим
+    current_test_mode = TEST_MODE or forced_test_mode
+    
+    return jsonify({
+        'test_mode': current_test_mode,
+        'forced_test_mode': forced_test_mode,
+        'message': f"Тестовый режим {'включен' if current_test_mode else 'выключен'}"
+    })
+
 # Новый маршрут для переключения тестового режима
 @app.route('/api/test_mode', methods=['POST'])
 def toggle_test_mode():
