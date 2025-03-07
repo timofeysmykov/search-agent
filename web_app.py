@@ -7,7 +7,8 @@ import sqlite3
 import json
 import uuid
 import datetime
-from flask import Flask, request, render_template, jsonify, g
+from flask import Flask, request, jsonify, g, send_from_directory
+from flask_cors import CORS
 from llm_api import query_llm
 from search_api import search_perplexity
 from utils import process_input, format_output, needs_search, combine_input
@@ -20,7 +21,18 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 # Initialize Flask app
-app = Flask(__name__)
+app = Flask(__name__, static_folder='frontend/my-app/build', static_url_path='')
+
+# Включаем CORS для всех маршрутов, чтобы React-приложение могло обращаться к API
+CORS(app)
+
+# Добавляем catch-all маршрут для любых путей, чтобы React-Router мог работать корректно
+@app.route('/<path:path>')
+def static_file(path):
+    try:
+        return send_from_directory(app.static_folder, path)
+    except:
+        return send_from_directory(app.static_folder, 'index.html')
 
 # Глобальная переменная для контроля тестового режима
 TEST_MODE = False
@@ -90,8 +102,9 @@ def get_chat_by_id(chat_id):
 
 @app.route('/', methods=['GET'])
 def home():
-    """Render the home page."""
-    return render_template('index.html')
+    """Serve the React app - only in production.
+    In development, React app is served by its own dev server."""
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/api/query', methods=['POST'])
 def api_query():
@@ -160,12 +173,12 @@ def api_query():
         logger.error(f"Error processing API request: {e}")
         return jsonify({'error': str(e)}), 500
 
-# Проверяем наличие директории templates
-def ensure_template_directory():
-    """Проверяет наличие директории templates и создает её при необходимости."""
-    templates_dir = os.path.join(os.path.dirname(__file__), 'templates')
-    if not os.path.exists(templates_dir):
-        os.makedirs(templates_dir, exist_ok=True)
+# Функция для обеспечения наличия build директории для React-приложения
+def ensure_react_build_directory():
+    """Проверяет наличие build директории для React-приложения и создает её при необходимости."""
+    build_dir = os.path.join(os.path.dirname(__file__), 'frontend/my-app/build')
+    if not os.path.exists(build_dir):
+        os.makedirs(build_dir, exist_ok=True)
 
 def ensure_schema_file():
     """Проверяет наличие файла schema.sql и создает его при необходимости."""
@@ -280,10 +293,26 @@ def delete_chat(chat_id):
         logger.error(f"Ошибка при удалении чата: {e}")
         return jsonify({'error': str(e)}), 500
 
+# Функция для сборки React-приложения
+def build_react_app():
+    """Собирает React-приложение для production"""
+    try:
+        import subprocess
+        import os
+        frontend_dir = os.path.join(os.path.dirname(__file__), 'frontend/my-app')
+        if os.path.exists(frontend_dir):
+            print(f"Сборка React-приложения из директории {frontend_dir}...")
+            subprocess.run(['npm', 'run', 'build'], cwd=frontend_dir, check=True)
+            print("React-приложение успешно собрано.")
+            return True
+        else:
+            print(f"Директория React-приложения не найдена: {frontend_dir}")
+            return False
+    except Exception as e:
+        print(f"Ошибка при сборке React-приложения: {e}")
+        return False
+
 if __name__ == '__main__':
-    # Проверяем наличие директории templates
-    ensure_template_directory()
-    
     # Выводим информацию о расположении базы данных
     print(f"База данных будет размещена по пути: {DATABASE}")
     if os.getenv('DB_PATH'):
@@ -317,6 +346,25 @@ if __name__ == '__main__':
         print("Автоматически включен тестовый режим. Для полноценной работы установите API ключи.")
     else:
         print("API ключи найдены. Приложение работает в обычном режиме.")
+    
+        # Создаем директорию для React-сборки, если она не существует
+    ensure_react_build_directory()
+    
+    # Проверяем наличие собранного React-приложения
+    build_dir = os.path.join(os.path.dirname(__file__), 'frontend/my-app/build')
+    index_html = os.path.join(build_dir, 'index.html')
+    if not os.path.exists(index_html):
+        print("\n\033[33mВнимание: React-приложение не собрано!\033[0m")
+        print("\033[33mДля сборки React-приложения выполните следующие команды:\033[0m")
+        print("\033[33mcd frontend/my-app && npm run build\033[0m")
+        print("\033[33mИли запустите функцию build_react_app() в коде.\033[0m")
+        print("\033[33mПока React-приложение не собрано, вы можете запустить его в режиме разработки:\033[0m")
+        print("\033[33mcd frontend/my-app && npm run dev\033[0m")
+    else:
+        print("React-приложение собрано и доступно по адресу http://localhost:5001")
+    
+    # Для сборки React-приложения раскомментируйте эту строку
+    # build_react_app()
     
     # Run the Flask app
     app.run(debug=True, host='0.0.0.0', port=5001)
